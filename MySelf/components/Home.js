@@ -8,6 +8,12 @@ const NavigateToDetails = props => {
 const NavigateToEducation = props => {
     props.navigation.navigate('Education')
 }
+const NavigateToSkills = props => {
+    props.navigation.navigate('Skills')
+}
+const NavigateToEca = props => {
+    props.navigation.navigate('ECA')
+}
 
 const Home = props => {
   return (
@@ -25,11 +31,11 @@ const Home = props => {
         <Text>EDUCATION</Text>
       </TouchableOpacity>
 
-         <TouchableOpacity style={styles.button} onPress={() => NavigateToDetails(props)} >
+         <TouchableOpacity style={styles.button} onPress={() => NavigateToSkills(props)} >
         <Text>SKILLS</Text>
       </TouchableOpacity>
 
-         <TouchableOpacity style={styles.button} onPress={() => NavigateToDetails(props)} >
+         <TouchableOpacity style={styles.button} onPress={() => NavigateToEca(props)} >
         <Text>ECA</Text>
       </TouchableOpacity>
 

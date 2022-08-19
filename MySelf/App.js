@@ -5,8 +5,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from './components/Home'
 import About from './components/About'
 import Education from './components/Education'
-// import Skills from './components/Skills'
-// import ECA from './components/ECA'
+import Skills from './components/Skills'
+import Eca from './components/Eca'
 
 
 const Stack = createNativeStackNavigator();
@@ -19,8 +19,8 @@ export default function App() {
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="About" component={About} />
         <Stack.Screen name="Education" component={Education} />
-        {/* <Stack.Screen name="Skills" component={Skills} />
-        <Stack.Screen name="ECA" component={ECA} /> */}
+        <Stack.Screen name="Skills" component={Skills} />
+        <Stack.Screen name="ECA" component={Eca} /> 
       </Stack.Navigator>
     </NavigationContainer>
   );
